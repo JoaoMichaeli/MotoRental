@@ -1,0 +1,17 @@
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Infrastructure\bin\Debug\net8.0\MotoRental.Infrastructure.deps.json
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Infrastructure\bin\Debug\net8.0\MotoRental.Infrastructure.runtimeconfig.json
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Infrastructure\bin\Debug\net8.0\MotoRental.Infrastructure.dll
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Infrastructure\bin\Debug\net8.0\MotoRental.Infrastructure.pdb
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Infrastructure\bin\Debug\net8.0\MotoRental.Domain.dll
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Infrastructure\bin\Debug\net8.0\MotoRental.Domain.pdb
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Infrastructure\obj\Debug\net8.0\MotoRental.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Infrastructure\obj\Debug\net8.0\MotoRental.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Infrastructure\obj\Debug\net8.0\MotoRental.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Infrastructure\obj\Debug\net8.0\MotoRental.Infrastructure.AssemblyInfo.cs
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Infrastructure\obj\Debug\net8.0\MotoRental.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Infrastructure\obj\Debug\net8.0\MotoRent.8FEF5A4B.Up2Date
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Infrastructure\obj\Debug\net8.0\MotoRental.Infrastructure.dll
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Infrastructure\obj\Debug\net8.0\refint\MotoRental.Infrastructure.dll
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Infrastructure\obj\Debug\net8.0\MotoRental.Infrastructure.pdb
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Infrastructure\obj\Debug\net8.0\MotoRental.Infrastructure.genruntimeconfig.cache
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Infrastructure\obj\Debug\net8.0\ref\MotoRental.Infrastructure.dll

@@ -1,0 +1,15 @@
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Common\bin\Debug\net8.0\MotoRental.Common.deps.json
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Common\bin\Debug\net8.0\MotoRental.Common.dll
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Common\bin\Debug\net8.0\MotoRental.Common.pdb
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Common\bin\Debug\net8.0\MotoRental.Domain.dll
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Common\bin\Debug\net8.0\MotoRental.Domain.pdb
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Common\obj\Debug\net8.0\MotoRental.Common.csproj.AssemblyReference.cache
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Common\obj\Debug\net8.0\MotoRental.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Common\obj\Debug\net8.0\MotoRental.Common.AssemblyInfoInputs.cache
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Common\obj\Debug\net8.0\MotoRental.Common.AssemblyInfo.cs
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Common\obj\Debug\net8.0\MotoRental.Common.csproj.CoreCompileInputs.cache
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Common\obj\Debug\net8.0\MotoRent.D00B9D3C.Up2Date
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Common\obj\Debug\net8.0\MotoRental.Common.dll
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Common\obj\Debug\net8.0\refint\MotoRental.Common.dll
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Common\obj\Debug\net8.0\MotoRental.Common.pdb
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Common\obj\Debug\net8.0\ref\MotoRental.Common.dll

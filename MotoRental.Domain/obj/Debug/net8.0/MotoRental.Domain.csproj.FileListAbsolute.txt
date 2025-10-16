@@ -1,0 +1,11 @@
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Domain\bin\Debug\net8.0\MotoRental.Domain.deps.json
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Domain\bin\Debug\net8.0\MotoRental.Domain.dll
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Domain\bin\Debug\net8.0\MotoRental.Domain.pdb
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Domain\obj\Debug\net8.0\MotoRental.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Domain\obj\Debug\net8.0\MotoRental.Domain.AssemblyInfoInputs.cache
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Domain\obj\Debug\net8.0\MotoRental.Domain.AssemblyInfo.cs
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Domain\obj\Debug\net8.0\MotoRental.Domain.csproj.CoreCompileInputs.cache
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Domain\obj\Debug\net8.0\MotoRental.Domain.dll
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Domain\obj\Debug\net8.0\refint\MotoRental.Domain.dll
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Domain\obj\Debug\net8.0\MotoRental.Domain.pdb
+C:\Users\joaov\Desktop\MotoRental\MotoRental.Domain\obj\Debug\net8.0\ref\MotoRental.Domain.dll
