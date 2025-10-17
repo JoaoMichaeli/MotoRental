@@ -1,9 +1,18 @@
-﻿namespace MotoRental.Api.Application.DTOs;
+﻿using System.Text.Json.Serialization;
 
-public class MotorcycleDto
-{
-    public Guid Id { get; set; }
-    public int Year { get; set; }
-    public string Model { get; set; } = default!;
-    public string Plate { get; set; } = default!;
-}
+namespace MotoRental.Api.Application.DTOs;
+
+    public class MotorcycleDto
+    {
+        [JsonPropertyName("identificador")]
+        public Guid Id { get; set; }
+
+        [JsonPropertyName("ano")]
+        public int Year { get; set; }
+
+        [JsonPropertyName("modelo")]
+        public string Model { get; set; } = default!;
+
+        [JsonPropertyName("placa")]
+        public string Plate { get; set; } = default!;
+    }

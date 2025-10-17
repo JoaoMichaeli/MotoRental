@@ -6,12 +6,19 @@ using MotoRental.Api.Exceptions;
 namespace MotoRental.Api.Controllers;
 
 [ApiController]
-[Route("api/motorcycles")]
+[Route("motos")]
 public class MotorcyclesController : ControllerBase
 {
     private readonly IMotorcycleService _service;
     public MotorcyclesController(IMotorcycleService service) { _service = service; }
 
+    /// <summary>
+    /// Cadastra uma nova moto
+    /// </summary>
+    /// <param name="request">Dados da moto a ser cadastrada.</param>
+    /// <returns>Retorna a moto criada</returns>
+    /// <response code="400">Dados inválidos</response>
+    /// <response code="500">Ocorreu um erro interno no servidor</response>
     [HttpPost]
     public async Task<IActionResult> Create([FromBody] CreateMotorcycleRequest request)
     {
@@ -22,10 +29,13 @@ public class MotorcyclesController : ControllerBase
         }
         catch (BusinessException ex)
         {
-            return BadRequest(new { message = ex.Message });
+            return BadRequest(new { mensagem = ex.Message });
         }
     }
 
+    /// <summary>
+    /// Consultar motos existentes
+    /// </summary>
     [HttpGet]
     public async Task<IActionResult> GetAll([FromQuery] string? plate)
     {
@@ -33,16 +43,12 @@ public class MotorcyclesController : ControllerBase
         return Ok(list);
     }
 
-    [HttpGet("{id:guid}")]
-    public async Task<IActionResult> GetById([FromServices] IMotorcycleService svc, Guid id)
-    {
-        var all = await svc.GetMotorcyclesAsync(null);
-        var item = all.FirstOrDefault(m => m.Id == id);
-        if (item == null) return NotFound();
-        return Ok(item);
-    }
-
-    [HttpPatch("{id:guid}/plate")]
+    /// <summary>
+    /// Modificar a placa de uma moto
+    /// </summary>
+    /// <response code="200">Placa modificada com sucesso</response>
+    /// <response code="400">Dados inválidos</response>
+    [HttpPut("{id:guid}/placa")]
     public async Task<IActionResult> UpdatePlate(Guid id, [FromBody] string newPlate)
     {
         try
@@ -50,9 +56,31 @@ public class MotorcyclesController : ControllerBase
             await _service.UpdatePlateAsync(id, newPlate);
             return NoContent();
         }
-        catch (BusinessException ex) { return BadRequest(new { message = ex.Message }); }
+        catch (BusinessException ex)
+        {
+            return BadRequest(new { message = ex.Message });
+        }
     }
 
+    /// <summary>
+    /// Consultar motos existentes por id
+    /// </summary>
+    /// <response code="200">Detalhes da moto</response>
+    /// <response code="400">Dados inválidos</response>
+    /// <response code="404">Moto não encotrada</response>
+    [HttpGet("{id:guid}")]
+    public async Task<IActionResult> GetById(Guid id)
+    {
+        var list = await _service.GetMotorcyclesAsync(null);
+        var item = list.FirstOrDefault(m => m.Id == id);
+        if (item == null) return NotFound();
+        return Ok(item);
+    }
+
+    /// <summary>
+    /// Remover uma moto
+    /// </summary>
+    /// <response code="400">Dados inválidos</response>
     [HttpDelete("{id:guid}")]
     public async Task<IActionResult> Delete(Guid id)
     {
@@ -61,6 +89,9 @@ public class MotorcyclesController : ControllerBase
             await _service.DeleteAsync(id);
             return NoContent();
         }
-        catch (BusinessException ex) { return BadRequest(new { message = ex.Message }); }
+        catch (BusinessException ex)
+        {
+            return BadRequest(new { message = ex.Message });
+        }
     }
 }
