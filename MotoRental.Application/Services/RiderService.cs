@@ -1,8 +1,10 @@
-﻿using MotoRental.Api.Application.DTOs;
-using MotoRental.Api.Domain.Entities;
+﻿using MotoRental.Api.Domain.Entities;
 using MotoRental.Api.Exceptions;
-using MotoRental.Api.Infrastructure.Repositories;
+using MotoRental.Application.Interfaces;
+using MotoRental.Common.DTOs.Rider.Request;
+using MotoRental.Common.DTOs.Rider.Response;
 using MotoRental.Common.Mapping;
+using MotoRental.Infrastructure.Interfaces;
 
 namespace MotoRental.Api.Application.Services;
 
@@ -11,7 +13,7 @@ public class RiderService : IRiderService
     private readonly IRiderRepository _repo;
     public RiderService(IRiderRepository repo) { _repo = repo; }
 
-    public async Task<RiderDto> CreateRiderAsync(CreateRiderRequest request)
+    public async Task<RiderResponseDto> CreateRiderAsync(CreateRiderRequest request)
     {
         if (string.IsNullOrWhiteSpace(request.Cnpj)) throw new BusinessException("CNPJ required");
         if (string.IsNullOrWhiteSpace(request.CnhNumber)) throw new BusinessException("CNH number required");
@@ -35,7 +37,7 @@ public class RiderService : IRiderService
         return rider.ToDto();
     }
 
-    public async Task<RiderDto?> GetByIdAsync(Guid id)
+    public async Task<RiderResponseDto?> GetByIdAsync(Guid id)
     {
         var r = await _repo.GetByIdAsync(id);
         return r?.ToDto();

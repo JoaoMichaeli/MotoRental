@@ -1,9 +1,11 @@
-﻿using MotoRental.Api.Application.DTOs;
-using MotoRental.Api.Domain.Entities;
+﻿using MotoRental.Api.Domain.Entities;
 using MotoRental.Api.Enums;
 using MotoRental.Api.Exceptions;
-using MotoRental.Api.Infrastructure.Repositories;
+using MotoRental.Application.Interfaces;
+using MotoRental.Common.DTOs.Rental.Request;
+using MotoRental.Common.DTOs.Rental.Response;
 using MotoRental.Common.Mapping;
+using MotoRental.Infrastructure.Interfaces;
 
 namespace MotoRental.Api.Application.Services;
 

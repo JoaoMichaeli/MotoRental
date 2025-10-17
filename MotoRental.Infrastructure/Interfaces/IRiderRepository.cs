@@ -1,6 +1,6 @@
 ﻿using MotoRental.Api.Domain.Entities;
 
-namespace MotoRental.Api.Infrastructure.Repositories;
+namespace MotoRental.Infrastructure.Interfaces;
 
 public interface IRiderRepository
 {

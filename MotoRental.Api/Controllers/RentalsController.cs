@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MotoRental.Api.Application.DTOs;
-using MotoRental.Api.Application.Services;
 using MotoRental.Api.Exceptions;
+using MotoRental.Application.Interfaces;
+using MotoRental.Common.DTOs.Rental.Request;
 
 namespace MotoRental.Api.Controllers;
 

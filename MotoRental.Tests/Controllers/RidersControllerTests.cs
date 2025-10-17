@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
-using MotoRental.Api.Application.DTOs;
-using MotoRental.Api.Application.Services;
 using MotoRental.Api.Controllers;
+using MotoRental.Application.Interfaces;
+using MotoRental.Common.DTOs.Rider.Response;
 
 namespace MotoRental.Tests.Controllers
 {
@@ -22,7 +22,7 @@ namespace MotoRental.Tests.Controllers
         public async Task Create_ReturnsCreatedResult_WhenSuccessful()
         {
             var request = new CreateRiderRequest { Name = "João", CnhNumber = "123456", Cnpj = "123456789" };
-            var dto = new RiderDto { Id = Guid.NewGuid(), Name = "João", CnhNumber = "123456", Cnpj = "123456789" };
+            var dto = new RiderResponseDto { Id = Guid.NewGuid(), Name = "João", CnhNumber = "123456", Cnpj = "123456789" };
 
             _serviceMock.Setup(s => s.CreateRiderAsync(request)).ReturnsAsync(dto);
 
@@ -35,7 +35,7 @@ namespace MotoRental.Tests.Controllers
         [Fact]
         public async Task GetById_ReturnsNotFound_WhenRiderDoesNotExist()
         {
-            _serviceMock.Setup(s => s.GetByIdAsync(It.IsAny<Guid>())).ReturnsAsync((RiderDto)null);
+            _serviceMock.Setup(s => s.GetByIdAsync(It.IsAny<Guid>())).ReturnsAsync((RiderResponseDto)null);
 
             var result = await _controller.GetById(Guid.NewGuid());
 

@@ -1,6 +1,6 @@
 ﻿using MotoRental.Api.Enums;
 
-namespace MotoRental.Api.Application.DTOs;
+namespace MotoRental.Common.DTOs.Rider.Request;
 
 public class CreateRiderRequest
 {

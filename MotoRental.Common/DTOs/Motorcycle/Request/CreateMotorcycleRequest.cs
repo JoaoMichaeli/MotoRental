@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace MotoRental.Api.Application.DTOs;
+namespace MotoRental.Common.DTOs.Motorcycle.Request;
 
 public class CreateMotorcycleRequest
 {

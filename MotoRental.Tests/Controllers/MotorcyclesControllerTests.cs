@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Moq;
-using MotoRental.Api.Application.DTOs;
-using MotoRental.Api.Application.Services;
 using MotoRental.Api.Controllers;
 using MotoRental.Api.Exceptions;
+using MotoRental.Application.Interfaces;
+using MotoRental.Common.DTOs.Motorcycle.Response;
 
 namespace MotoRental.Tests.Controllers
 {
@@ -22,7 +22,7 @@ namespace MotoRental.Tests.Controllers
         public async Task Create_ReturnsCreatedResult_WhenSuccessful()
         {
             var request = new CreateMotorcycleRequest { Year = 2020, Model = "Fan", Plate = "RKLO823" };
-            var dto = new MotorcycleDto { Id = Guid.NewGuid(), Year = 2020, Model = "Fan", Plate = "RKLO823" };
+            var dto = new MotorcycleResponseDto { Id = Guid.NewGuid(), Year = 2020, Model = "Fan", Plate = "RKLO823" };
 
             _serviceMock.Setup(s => s.CreateMotorcycleAsync(request)).ReturnsAsync(dto);
 
@@ -47,9 +47,9 @@ namespace MotoRental.Tests.Controllers
         [Fact]
         public async Task GetAll_ReturnsOkWithList()
         {
-            var motorcycles = new List<MotorcycleDto>
+            var motorcycles = new List<MotorcycleResponseDto>
             {
-                new MotorcycleDto { Id = Guid.NewGuid(), Year = 2020, Model = "Fan", Plate = "RKLO823" }
+                new MotorcycleResponseDto { Id = Guid.NewGuid(), Year = 2020, Model = "Fan", Plate = "RKLO823" }
             };
             _serviceMock.Setup(s => s.GetMotorcyclesAsync(null)).ReturnsAsync(motorcycles);
 
@@ -62,7 +62,7 @@ namespace MotoRental.Tests.Controllers
         [Fact]
         public async Task GetById_ReturnsNotFound_WhenMotorcycleDoesNotExist()
         {
-            _serviceMock.Setup(s => s.GetMotorcyclesAsync(null)).ReturnsAsync(new List<MotorcycleDto>());
+            _serviceMock.Setup(s => s.GetMotorcyclesAsync(null)).ReturnsAsync(new List<MotorcycleResponseDto>());
 
             var result = await _controller.GetById(Guid.NewGuid());
 

@@ -1,8 +1,8 @@
 ﻿using MotoRental.Api.Enums;
 
-namespace MotoRental.Api.Application.DTOs;
+namespace MotoRental.Common.DTOs.Rider.Response;
 
-public class RiderDto
+public class RiderResponseDto
 {
     public Guid Id { get; set; }
     public string Name { get; set; } = default!;

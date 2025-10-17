@@ -1,8 +1,10 @@
-﻿using MotoRental.Api.Application.DTOs;
-using MotoRental.Api.Domain.Entities;
+﻿using MotoRental.Api.Domain.Entities;
 using MotoRental.Common.Mapping;
 using MotoRental.Api.Exceptions;
-using MotoRental.Api.Infrastructure.Repositories;
+using MotoRental.Application.Interfaces;
+using MotoRental.Infrastructure.Interfaces;
+using MotoRental.Common.DTOs.Motorcycle.Request;
+using MotoRental.Common.DTOs.Motorcycle.Response;
 
 namespace MotoRental.Api.Application.Services;
 
@@ -15,7 +17,7 @@ public class MotorcyleService : IMotorcycleService
         _repo = repo;
     }
 
-    public async Task<MotorcycleDto> CreateMotorcycleAsync(CreateMotorcycleRequest request)
+    public async Task<MotorcycleResponseDto> CreateMotorcycleAsync(CreateMotorcycleRequest request)
     {
         if (string.IsNullOrWhiteSpace(request.Plate)) throw new BusinessException("Plate is required");
         if (string.IsNullOrWhiteSpace(request.Model)) throw new BusinessException("Model is required");
@@ -36,7 +38,7 @@ public class MotorcyleService : IMotorcycleService
         return moto.ToDto();
     }
 
-    public async Task<IEnumerable<MotorcycleDto>> GetMotorcyclesAsync(string? plateFilter = null)
+    public async Task<IEnumerable<MotorcycleResponseDto>> GetMotorcyclesAsync(string? plateFilter = null)
     {
         var list = await _repo.GetAllAsync(plateFilter);
         return list.Select(m => m.ToDto());

@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MotoRental.Api.Domain.Entities;
 using MotoRental.Api.Infrastructure.Persistence;
+using MotoRental.Infrastructure.Interfaces;
 
 namespace MotoRental.Api.Infrastructure.Repositories;
 

@@ -1,8 +1,8 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace MotoRental.Api.Application.DTOs;
+namespace MotoRental.Common.DTOs.Motorcycle.Response;
 
-    public class MotorcycleDto
+    public class MotorcycleResponseDto
     {
         [JsonPropertyName("identificador")]
         public Guid Id { get; set; }

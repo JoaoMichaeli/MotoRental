@@ -1,6 +1,7 @@
-﻿using MotoRental.Api.Application.DTOs;
+﻿using MotoRental.Common.DTOs.Rental.Request;
+using MotoRental.Common.DTOs.Rental.Response;
 
-namespace MotoRental.Api.Application.Services;
+namespace MotoRental.Application.Interfaces;
 
 public interface IRentalService
 {

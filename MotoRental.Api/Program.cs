@@ -2,6 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using MotoRental.Api.Infrastructure.Persistence;
 using MotoRental.Api.Infrastructure.Repositories;
 using MotoRental.Api.Application.Services;
+using MotoRental.Application.Interfaces;
+using MotoRental.Infrastructure.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 

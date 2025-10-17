@@ -2,10 +2,10 @@
 using FluentAssertions;
 using MotoRental.Api.Application.Services;
 using MotoRental.Api.Application.DTOs;
-using MotoRental.Api.Infrastructure.Repositories;
 using MotoRental.Api.Domain.Entities;
 using MotoRental.Api.Enums;
 using MotoRental.Api.Exceptions;
+using MotoRental.Infrastructure.Interfaces;
 
 namespace MotoRental.Tests.Services
 {

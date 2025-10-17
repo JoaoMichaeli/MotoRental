@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Moq;
-using MotoRental.Api.Application.DTOs;
-using MotoRental.Api.Application.Services;
 using MotoRental.Api.Controllers;
 using MotoRental.Api.Enums;
+using MotoRental.Application.Interfaces;
+using MotoRental.Common.DTOs.Rental.Response;
 
 namespace MotoRental.Tests.Controllers
 {
