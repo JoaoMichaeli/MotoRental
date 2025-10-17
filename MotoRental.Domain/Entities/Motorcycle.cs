@@ -6,5 +6,4 @@ public class Motorcycle
     public int Year { get; set; }
     public string Model { get; set; } = default!;
     public string Plate { get; set; } = default!;
-    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 }

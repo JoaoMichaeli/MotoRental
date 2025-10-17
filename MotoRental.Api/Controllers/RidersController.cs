@@ -39,9 +39,24 @@ public class RidersController : ControllerBase
     public async Task<IActionResult> UploadCnh(Guid id, IFormFile cnh)
     {
         if (cnh == null || cnh.Length == 0)
-            return BadRequest(new { message = "Invalid CNH file." });
+            return BadRequest(new { message = "Arquivo CNH inválido." });
 
-        return Ok(new { message = $"CNH uploaded successfully for rider {id}." });
+        var allowedExtensions = new[] { ".png", ".bmp" };
+        var ext = Path.GetExtension(cnh.FileName)?.ToLower();
+        if (!allowedExtensions.Contains(ext))
+            return BadRequest(new { message = "Formato inválido. Apenas PNG ou BMP são aceitos." });
+
+        var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "UploadsCNH");
+        if (!Directory.Exists(uploadsFolder))
+            Directory.CreateDirectory(uploadsFolder);
+
+        var fileName = $"{id}{ext}";
+        var filePath = Path.Combine(uploadsFolder, fileName);
+
+        using var stream = new FileStream(filePath, FileMode.Create);
+        await cnh.CopyToAsync(stream);
+
+        return Ok(new { message = $"CNH enviada com sucesso para o entregador {id}.", path = filePath });
     }
 
     /// <summary>

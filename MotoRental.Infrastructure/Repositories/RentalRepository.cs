@@ -7,7 +7,6 @@ namespace MotoRental.Api.Infrastructure.Repositories;
 public class RentalRepository : IRentalRepository
 {
     private readonly MotoRentalDbContext _db;
-    public RentalRepository(MotoRentalDbContext db) { _db = db; }
 
     public async Task AddAsync(Rental rental)
     {

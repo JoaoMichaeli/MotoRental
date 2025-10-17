@@ -10,5 +10,4 @@ public class Rider
     public DateTime BirthDate { get; set; }
     public string CnhNumber { get; set; } = default!;
     public LicenseType LicenseType { get; set; }
-    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 }

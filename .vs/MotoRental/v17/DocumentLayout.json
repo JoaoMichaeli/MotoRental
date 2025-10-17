@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\joaov\\Desktop\\MotoRental\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1C5AC943-58A4-49EC-81DC-4A8340C3A0A1}|MotoRental.Tests\\MotoRental.Tests.csproj|c:\\users\\joaov\\desktop\\motorental\\motorental.tests\\mappingextensionstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C5AC943-58A4-49EC-81DC-4A8340C3A0A1}|MotoRental.Tests\\MotoRental.Tests.csproj|solutionrelative:motorental.tests\\mappingextensionstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{58308E56-8C29-47CA-AF78-AFE86389B577}|MotoRental.Api\\MotoRental.Api.csproj|c:\\users\\joaov\\desktop\\motorental\\motorental.api\\controllers\\riderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58308E56-8C29-47CA-AF78-AFE86389B577}|MotoRental.Api\\MotoRental.Api.csproj|solutionrelative:motorental.api\\controllers\\riderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MappingExtensionsTests.cs",
-              "DocumentMoniker": "C:\\Users\\joaov\\Desktop\\MotoRental\\MotoRental.Tests\\MappingExtensionsTests.cs",
-              "RelativeDocumentMoniker": "MotoRental.Tests\\MappingExtensionsTests.cs",
-              "ToolTip": "C:\\Users\\joaov\\Desktop\\MotoRental\\MotoRental.Tests\\MappingExtensionsTests.cs",
-              "RelativeToolTip": "MotoRental.Tests\\MappingExtensionsTests.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAgwCgAAAArAAAAAAAAAA==",
+              "Title": "RidersController.cs",
+              "DocumentMoniker": "C:\\Users\\joaov\\Desktop\\MotoRental\\MotoRental.Api\\Controllers\\RidersController.cs",
+              "RelativeDocumentMoniker": "MotoRental.Api\\Controllers\\RidersController.cs",
+              "ToolTip": "C:\\Users\\joaov\\Desktop\\MotoRental\\MotoRental.Api\\Controllers\\RidersController.cs",
+              "RelativeToolTip": "MotoRental.Api\\Controllers\\RidersController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAWwDwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T20:28:14.157Z",
+              "WhenOpened": "2025-10-17T20:42:05.119Z",
               "EditorCaption": ""
             }
           ]
